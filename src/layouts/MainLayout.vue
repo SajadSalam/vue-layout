@@ -7,7 +7,7 @@
       </v-container>
     </v-main>
   </v-app>
-</template>5
+</template>
 <script>
 import AppBar from "./AppBar.vue";
 export default {

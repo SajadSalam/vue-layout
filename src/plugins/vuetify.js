@@ -7,6 +7,7 @@ Vue.use(Vuetify);
 export default new Vuetify({
     rtl: store.state.isRTL,
     theme:{
+        dark: store.state.dark,
         themes: {
             light: config.colors,
             dark: config.colors

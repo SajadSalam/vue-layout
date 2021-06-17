@@ -1,7 +1,7 @@
 export default {
   projectName: "تجربة",
   isRTL: true,
-  theme: "dark",
+  dark: true,
   colors: {
     primary: "#197fD2",
     secondary: "#424242",
