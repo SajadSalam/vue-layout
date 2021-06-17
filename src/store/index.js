@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isRTL: false,
+    isRTL: true,
   },
   mutations: {
     UPDATE_RTL(state, val) {

@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <v-alert type="primary" :value="true">
-            ddsd
-        </v-alert>
-    </div>
+  <div>
+    gfdgdf
+  </div>
 </template>
