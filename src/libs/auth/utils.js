@@ -1,4 +1,5 @@
-import useJwt from "@/auth/jwt/useJwt";
+import useJwt from "./jwt/useJwt";
+
 /**
  * @returns true if user is logged in and false otherwise
  */
