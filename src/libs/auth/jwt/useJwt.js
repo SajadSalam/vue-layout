@@ -1,5 +1,5 @@
+import axiosIns from '../../http/http'
 import JwtService from './jwtService'
-import axios from '@axios'
 
 export default function useJwt(axiosIns, jwtOverrideConfig) {
   const jwt = new JwtService(axiosIns, jwtOverrideConfig)
@@ -8,5 +8,5 @@ export default function useJwt(axiosIns, jwtOverrideConfig) {
     jwt,
   }
 }
-const { jwt } = useJwt(axios, {})
-export default jwt
+const { jwt } = useJwt(axiosIns, {})
+export  {jwt}
