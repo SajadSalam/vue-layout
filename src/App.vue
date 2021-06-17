@@ -21,3 +21,10 @@ export default {
   }),
 };
 </script>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css? family=Cairo:300,400,700&display=swap');
+$body-font-family: 'Cairo', sans-serif !important;
+.v-application {
+  font-family: $body-font-family;
+}
+</style>

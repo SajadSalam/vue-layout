@@ -1,12 +1,7 @@
 <template>
   <div class="d-flex align-center justify-around">
       <div class="d-flex align-center justify-around">
-        <v-icon class="mx-1">
-            {{ 
-                dark ? 'mdi-moon-waxing-crescent' : 'mdi-white-balance-sunny'
-             }}
-        </v-icon>
-        <v-switch class="mt-5" @change="updateDarkMode" type="error" v-model="dark"></v-switch>
+        <v-switch inset class="mt-5" @change="updateDarkMode" :prepend-icon="dark ? 'mdi-moon-waxing-crescent' : 'mdi-white-balance-sunny'" color="error" dark #dense v-model="dark"></v-switch>
       </div>
   </div>
 </template>
