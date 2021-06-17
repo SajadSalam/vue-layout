@@ -22,6 +22,7 @@ export default class JwtService {
     // Request Interceptor
     this.axiosIns.interceptors.request.use(
       (config) => {
+        
         // Get token from localStorage
         const accessToken = this.getToken();
 
