@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer color="secondary" absolute permanent right>
-    <div class="d-flex align-center justify-center flex-column py-2 px-2">
+    <div class="d-flex align-center justify-center flex-column py-2 px-1">
       <div class="border-1">
         <v-avatar size="75" color="red">
           <span class="white--text text-h5">CJ</span>
