@@ -1,5 +1,12 @@
 # vue-layout
+Template for vue - vuetify projects 
 
+## Features :
+  * Customize On AXIOS `this.$http | src/libs/http`
+  * JWT lib for authentication `src/libs/jwt`
+  * Theme configuration `config.js`
+  * Easy edit layout `src/layout` 
+  * Router animation
 ## Project setup
 ```
 npm install
