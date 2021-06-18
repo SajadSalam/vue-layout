@@ -3,11 +3,11 @@ Template for vue - vuetify projects
 
 ## Features :
   * Customize On AXIOS `this.$http | src/libs/http`
-  * JWT lib for authentication `src/libs/jwt` By [SoliderPePe](https://github.com/SoliderPePe)
+  * JWT lib for authentication `src/libs/jwt` By [SoldierPePe](https://github.com/SoldierPePe)
   * Theme configuration `config.js`
   * Easy edit layout `src/layout` 
   * Router animation
-  & ElectorJS Builder By [SoliderPePe](https://github.com/SoliderPePe)
+  & ElectorJS Builder By [SoldierPePe](https://github.com/SoldierPePe)
 ## Project setup
 ```
 npm install
