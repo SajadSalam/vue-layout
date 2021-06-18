@@ -1,14 +1,14 @@
 export default {
   projectName: "تجربة",
   isRTL: true,
-  dark: true,
+  dark: false,
   colors: {
-    primary: "#197fD2",
-    secondary: "#424242",
-    accent: "#82B1FF",
+    primary: "#003586",
+    secondary: "#121854",
+    accent: "#12CAE6",
     error: "#FF5252",
     info: "#2196F3",
-    success: "#4CAF50",
+    success: "#37C978",
     warning: "#FFC107",
   },
 };

@@ -1,10 +1,16 @@
 <template>
   <v-app>
-    <v-main>
-      <navigation-bar />
     <app-bar />
+
+      <navigation-bar />
+    <v-main>
+
       <v-container>
-        <router-view />
+        <v-row>
+          <v-col cols="12" >
+            <router-view />
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
@@ -15,7 +21,7 @@ import NavigationBar from "./NavigationBar.vue";
 export default {
   components: {
     AppBar,
-    NavigationBar
+    NavigationBar,
   },
 };
 </script>

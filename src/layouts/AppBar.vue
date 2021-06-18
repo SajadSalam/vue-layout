@@ -1,5 +1,5 @@
 <template>
-     <v-app-bar color="primary" app dark>
+     <v-app-bar color="primary" elevation="0" app width="100%" dark>
           <v-toolbar-title>{{ $config.projectName }}</v-toolbar-title>
           <v-spacer></v-spacer>
           <theme-type></theme-type>

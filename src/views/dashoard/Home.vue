@@ -1,5 +1,9 @@
 <template>
-  <div>Time is {{ time }}</div>
+  <div>
+    <v-card class="py-5 px-5 ">
+      Time is {{ time }}
+    </v-card>
+  </div>
 </template>
 
 <script>
