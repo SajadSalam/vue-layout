@@ -1,13 +1,13 @@
 <template>
-  <v-navigation-drawer color="primary" app clipped   right>
-    <div class="d-flex align-center justify-center flex-column py-2 px-1">
+  <v-navigation-drawer color="primary" app clipped  right>
+    <div class="d-flex align-center justify-center flex-column py-2 px-1 mb-2">
       <div class="border-1">
-        <v-avatar size="50" color="accent">
+        <v-avatar size="75" color="accent">
           <span class="white--text text-h5">CJ</span>
         </v-avatar>
       </div>
-      <h5 class="white--text text-center">سجاد سلام</h5>
-      <h5 class="accent--text">ادمن</h5>
+      <h4 class="white--text text-center">سجاد سلام</h4>
+      <h4 class="accent--text">ادمن</h4>
     </div>
     <v-divider></v-divider>
     <v-list  nav>
