@@ -1,17 +1,13 @@
 <template>
   <v-app>
     <app-bar />
-
-      <navigation-bar />
+    <navigation-bar />
     <v-main>
-
-      <v-container>
-        <v-row>
-          <v-col cols="12" >
-            <router-view />
-          </v-col>
-        </v-row>
-      </v-container>
+      <!-- <v-container> -->
+        <div class="px-3 py-3">
+          <router-view />
+        </div>
+      <!-- </v-container> -->
     </v-main>
   </v-app>
 </template>
