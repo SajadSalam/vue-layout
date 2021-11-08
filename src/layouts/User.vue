@@ -2,9 +2,9 @@
   <div>
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color="primary" dark text v-bind="attrs" v-on="on">
-          <v-avatar size="25" color="accent"> SJ </v-avatar>
-          <label class="white--text"> سجاد سلام </label>
+        <v-btn  color="primary" x-large text v-bind="attrs" v-on="on">
+          <v-icon>mdi-account</v-icon>
+          <label> سجاد سلام </label>
         </v-btn>
       </template>
       <v-list>

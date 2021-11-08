@@ -1,10 +1,10 @@
 module.exports = {
-  pluginOptions: {
-    electronBuilder: {
-      nodeIntegration: true,
-      preload: "electron_src/preloadmenu.js",
-    },
-  },
+  // pluginOptions: {
+  //   electronBuilder: {
+  //     nodeIntegration: true,
+  //     preload: "electron_src/preloadmenu.js",
+  //   },
+  // },
   configureWebpack: {
     target: "web", //electron-renderer
   },

@@ -1,53 +1,62 @@
 <template>
-  <v-navigation-drawer color="primary" app expand-on-hover clipped :mini-variant.sync="mini" right>
-    <!-- <div class="d-flex align-center justify-center flex-column py-2 px-1 mb-2"> -->
-      <!-- <div class="border-1">
-        <v-avatar :size="mimi ? '25' : '75'" color="accent">
-          <span class="white--text text-h5">CJ</span>
-        </v-avatar>
-      </div>
-      <h4 v-if="!mini" class="white--text text-center">سجاد سلام</h4>
-      <h4 v-if="!mini" class="accent--text">المالك</h4>
-    </div> -->
-    <v-divider></v-divider>
-    <v-list  nav>
-      <v-list-item >
-        <v-list-item-avatar>
-          <v-avatar :size="!mini ? '75' : '25'" color="accent">
-          <span class="white--text text-center">CJ</span>
-        </v-avatar>
-        </v-list-item-avatar>
-
-        <v-list-item-title class="white--text ">
-          <p class="white--text" style="margin-bottom: 0px !important">
-          سجاد سلام
-          </p>
-          <p class="accent--text">
-          المالك
-          </p>
+  <v-navigation-drawer
+    v-model="$store.state.drawer"
+    bottom
+    floating
+    width="255"
+    app
+    right
+    class=""
+    style="
+      border-top-left-radius: 40px !important;
+      box-shadow: 0 0 15px 0 rgb(34 41 47 / 5%);
+    "
+  >
+    <v-list nav class="text-center">
+      <v-list-item>
+        <v-list-item-title
+          class="d-flex flex-column justify-center align-center"
+        >
+          <img
+            src="../assets/logo.png"
+            height="100"
+            width="100"
+            class="mt-3"
+            style="transform: rotate(180deg)"
+            alt=""
+          />
+          <!-- <v-container> -->
+          <h3 class="my-4">ادارة منصات التواصل</h3>
+          <!-- </v-container> -->
         </v-list-item-title>
-
-        
       </v-list-item>
-      <v-list-item v-for="item in items" class="white--text" :key="item.title" link>
+    </v-list>
+    <v-list nav>
+      <v-list-item
+        v-for="item in items"
+        class="white--text"
+        :key="item.title"
+        link
+        :to="typeof item.route == 'string' ? { name: item.route } : item.route"
+      >
         <v-list-item-icon>
-          <v-icon class="white--text">{{ item.icon }}</v-icon>
+          <v-icon class="">{{ item.icon }}</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title class="white--text">{{ item.title }}</v-list-item-title>
+          <v-list-item-title class="">{{ item.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
 <script>
-import Navigation from "../navigation"
+import Navigation from "../navigation";
 export default {
-  data(){
+  data() {
     return {
       items: Navigation,
-      mini:true
-    }
-  }
-}
+      mini: true,
+    };
+  },
+};
 </script>

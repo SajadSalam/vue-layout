@@ -4,7 +4,7 @@
 
 <script>
 import MainLayout from "./layouts/MainLayout.vue"
-
+import config from "./config"
 export default {
   name: 'App',
   // beforeCreate(){
@@ -19,6 +19,9 @@ export default {
   data: () => ({
     //
   }),
+  created(){
+    localStorage.setItem('theme', JSON.stringify(config))
+  },
 };
 </script>
 <style lang="scss">

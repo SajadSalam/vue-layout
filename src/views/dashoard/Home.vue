@@ -1,25 +1,15 @@
 <template>
   <div>
-    <v-card rounded="" height="150" raised class="">
-      <v-card-title class="text-h4">
-        تيست تايتيل
-        <v-spacer></v-spacer>
-        <v-card color="green" shaped raised>
-          <v-card-title class="text-h5 white--text">
-            <v-icon class="ml-1 white--text">mdi-account-check</v-icon>
-            ادمن
-          </v-card-title>
-        </v-card>
-      </v-card-title>
-      <v-card-text>
-        {{ time }}
-      </v-card-text>
-    </v-card>
+    <top-card />
   </div>
 </template>
 
 <script>
+import TopCard from './home-components/TopCard.vue'
 export default {
+  components: {
+    TopCard
+  },
   data() {
     return {
       interval: null,
